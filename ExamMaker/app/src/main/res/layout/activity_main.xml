@@ -9,25 +9,29 @@
         android:orientation="vertical">
 
     <TextView
-            android:text="Exam Maker"
+            android:text="@string/exam_maker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="36sp"
             android:textStyle="bold"
             android:gravity="center"/>
     <Button
-            android:text="Add Problem"
+            android:text="@string/add_problem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/addBT"/>
     <Button
-            android:text="Delete Problem"
+            android:text="@string/delete_problem"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/deleteProb"/>
+            android:layout_height="wrap_content" android:id="@+id/delBt"/>
     <Button
-            android:text="Test"
+            android:text="@string/show_problems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/showBt"/>
+    <Button
+            android:text="@string/test"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/testBT"/>
     <Button
-            android:text="Button"
+            android:text="@string/share"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/shareBT"/>
 </LinearLayout>

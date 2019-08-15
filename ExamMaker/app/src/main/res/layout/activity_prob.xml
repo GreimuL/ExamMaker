@@ -15,7 +15,9 @@
             android:layout_weight="1">
         <TextView
                 android:layout_width="0dp"
-                android:layout_height="wrap_content" android:id="@+id/dummy" android:layout_weight="25"/>
+                android:layout_height="wrap_content" android:id="@+id/dummy" android:layout_weight="25"
+                android:text="text size"
+                android:gravity="right"/>
         <Button
                 android:text="+"
                 android:layout_width="0dp"
@@ -35,23 +37,23 @@
             android:layout_height="0dp" android:layout_weight="7">
         <CheckBox
                 android:layout_width="match_parent"
-                android:layout_height="0dp" android:id="@+id/checkBox2" android:layout_weight="1"
+                android:layout_height="0dp" android:id="@+id/choice1" android:layout_weight="1"
                 android:text="null"/>
         <CheckBox
                 android:text="null"
                 android:layout_width="match_parent"
-                android:layout_height="0dp" android:id="@+id/checkBox3" android:layout_weight="1"/>
+                android:layout_height="0dp" android:id="@+id/choice2" android:layout_weight="1"/>
         <CheckBox
                 android:text="null"
                 android:layout_width="match_parent"
-                android:layout_height="0dp" android:id="@+id/checkBox4" android:layout_weight="1"/>
+                android:layout_height="0dp" android:id="@+id/choice3" android:layout_weight="1"/>
         <CheckBox
                 android:text="null"
                 android:layout_width="match_parent"
-                android:layout_height="0dp" android:id="@+id/checkBox5" android:layout_weight="1"/>
+                android:layout_height="0dp" android:id="@+id/choice4" android:layout_weight="1"/>
         <CheckBox
                 android:text="null"
                 android:layout_width="match_parent"
-                android:layout_height="0dp" android:id="@+id/checkBox6" android:layout_weight="1"/>
+                android:layout_height="0dp" android:id="@+id/choice5" android:layout_weight="1"/>
     </LinearLayout>
 </LinearLayout>

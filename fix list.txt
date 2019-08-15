@@ -1,0 +1,7 @@
+문제 발생 및 해결
+1.
+문제: manifest merger failed appcomponentfactory
+해결: 
+gradle.properties에
+android.useAndroidX=true
+android.enableJetifier=true 추가
