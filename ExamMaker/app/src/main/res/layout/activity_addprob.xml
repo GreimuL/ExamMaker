@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1.5">
+        <Button
+                android:text="Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/backBt"/>
+        <Button
+                android:text="New"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/newBt"/>
+        <Button
+                android:text="Load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/loadBt"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:id="@+id/textView2" android:layout_weight="0.7"
+            android:text="FileName"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/titleView"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="title"
+                android:ems="10"
+                android:id="@+id/titleEdit"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="3">
+        <TextView
+                android:text="Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/descriptionView"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="description"
+                android:ems="10"
+                android:id="@+id/descriptEdit"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="Choice 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/c1View"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="answer1"
+                android:ems="10"
+                android:id="@+id/c1Edit"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="Choice 2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/c2View"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="answer2"
+                android:ems="10"
+                android:id="@+id/c2Edit"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="Choice 3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/c3View"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="answer3"
+                android:ems="10"
+                android:id="@+id/c3Edit"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="Choice 4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/c4View"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="answer4"
+                android:ems="10"
+                android:id="@+id/c4Edit"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="Choice5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/c5View"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="answer5"
+                android:ems="10"
+                android:id="@+id/c5Edit"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="2">
+        <TextView
+                android:text="Explanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/explainView"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:text="explanation"
+                android:ems="10"
+                android:id="@+id/exEdit"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1.5">
+        <Button
+                android:text="Add Problem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:id="@+id/addBt"/>
+        <Button
+                android:text="Save File"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/saveBt"/>
+    </LinearLayout>
+</LinearLayout>

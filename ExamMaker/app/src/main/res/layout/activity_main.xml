@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+    <TextView
+            android:text="Exam Maker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="36sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    <Button
+            android:text="Add Problem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/addBT"/>
+    <Button
+            android:text="Delete Problem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/deleteProb"/>
+    <Button
+            android:text="Test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/testBT"/>
+    <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/shareBT"/>
+</LinearLayout>

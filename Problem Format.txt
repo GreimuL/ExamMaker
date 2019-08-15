@@ -1,0 +1,16 @@
+:ExamMakerFormat:
+:version 1:
+:blobthumbsup:
+---
+title
+##
+description !do not use "##"
+##
+choice1
+choice2
+choice3
+choice4
+choice5
+answer (format :1 2 3 4 5:)
+explanation
+---
