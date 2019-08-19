@@ -5,3 +5,8 @@
 gradle.properties에
 android.useAndroidX=true
 android.enableJetifier=true 추가
+2.
+문제:More than one file was found with OS independent path 'META-INF/atomicfu.kotlin_module'
+발생시기: 안드로이드 스튜디오 업데이트 이후 발생 
+해결:
+gradle의 room버전, lifecycle 버전을 최신으로 바꿔서 해결

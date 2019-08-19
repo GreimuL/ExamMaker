@@ -11,7 +11,7 @@
     <TextView
             android:text="@string/exam_maker"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="36sp"
+            android:layout_height="wrap_content" android:id="@+id/dbView" android:textSize="36sp"
             android:textStyle="bold"
             android:gravity="center"/>
     <Button

@@ -1,8 +1,8 @@
 package com.android.greimul.exammaker
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +14,9 @@ class MainActivity : AppCompatActivity() {
         }
         delBt.setOnClickListener{
 
+        }
+        showBt.setOnClickListener{
+            startActivity(Intent(this,ProbShowActivity::class.java))
         }
     }
 }

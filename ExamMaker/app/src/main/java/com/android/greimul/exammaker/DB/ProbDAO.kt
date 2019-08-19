@@ -1,4 +1,4 @@
-package com.android.greimul.exammaker.DB
+package com.android.greimul.exammaker.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
