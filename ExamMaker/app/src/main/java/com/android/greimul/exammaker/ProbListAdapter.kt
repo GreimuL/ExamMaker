@@ -15,6 +15,7 @@ class ProbListAdapter internal constructor(context: Context): RecyclerView.Adapt
 
     inner class ProbViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         val probItemView: TextView = itemView.itemTextView
+        val probIdView:TextView = itemView.idView
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProbViewHolder {
@@ -25,6 +26,7 @@ class ProbListAdapter internal constructor(context: Context): RecyclerView.Adapt
     override fun onBindViewHolder(holder: ProbViewHolder, position: Int) {
         val current = probs[position]
         holder.probItemView.text = current.title
+        holder.probIdView.text = current.id.toString()
     }
     internal fun setProbs(probs:List<Problems>){
         this.probs = probs
