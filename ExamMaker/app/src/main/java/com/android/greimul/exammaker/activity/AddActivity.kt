@@ -1,9 +1,10 @@
-package com.android.greimul.exammaker
+package com.android.greimul.exammaker.activity
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
+import com.android.greimul.exammaker.ProbViewModel
+import com.android.greimul.exammaker.R
 import com.android.greimul.exammaker.db.Problems
 import kotlinx.android.synthetic.main.activity_addprob.*
 

@@ -1,19 +1,21 @@
-package com.android.greimul.exammaker
+package com.android.greimul.exammaker.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.android.greimul.exammaker.ProbListAdapter
+import com.android.greimul.exammaker.ProbViewModel
+import com.android.greimul.exammaker.R
 import kotlinx.android.synthetic.main.activity_showprob.*
+import kotlinx.android.synthetic.main.recyclerview_item.*
 
 class ProbShowActivity:AppCompatActivity(){
-    companion object{
+    /*companion object{
         const val newProbActivityRequestCode = 1
-    }
-    private lateinit var probViewModel:ProbViewModel
+    }*/
+    private lateinit var probViewModel: ProbViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_showprob)

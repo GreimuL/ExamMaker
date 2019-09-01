@@ -7,11 +7,15 @@
               android:background="@android:color/white">
 
     <TextView
-            style = "@style/item_title"
+            style="@style/item_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/itemTextView" android:text="@string/title"/>
     <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/idView" android:layout_weight="1"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/viewProbBt" android:layout_weight="1"/>
 </LinearLayout>
