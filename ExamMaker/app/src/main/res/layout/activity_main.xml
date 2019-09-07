@@ -15,7 +15,7 @@
             android:textStyle="bold"
             android:gravity="center"/>
     <Button
-            android:text="@string/add_problem"
+            android:text="Make Exam"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/addBT"/>
     <Button
