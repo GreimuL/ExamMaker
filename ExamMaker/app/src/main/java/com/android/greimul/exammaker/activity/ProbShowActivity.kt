@@ -1,5 +1,6 @@
 package com.android.greimul.exammaker.activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -27,5 +28,8 @@ class ProbShowActivity:AppCompatActivity(){
         probViewModel.allProb.observe(this, Observer{probs->
             probs?.let{adapter.setProbs(it)}
         })
+        addprobBt.setOnClickListener {
+            startActivity(Intent(this,AddActivity::class.java))
+        }
     }
 }

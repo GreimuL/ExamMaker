@@ -18,10 +18,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.AddActivity"
-                   android:parentActivityName=".activity.MainActivity">
+                   android:parentActivityName=".activity.ProbShowActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity"/>
+                android:value=".activity.ProbShowActivity"/>
         </activity>
         <activity android:name=".activity.ProbShowActivity"
                    android:parentActivityName=".activity.SetViewActivity">

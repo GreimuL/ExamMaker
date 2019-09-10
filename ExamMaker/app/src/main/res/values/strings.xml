@@ -20,4 +20,8 @@
     <string name="delete_problem">Delete Problem</string>
     <string name="test">Test</string>
     <string name="share">Share</string>
+    <string name="problem_sets">Problem Sets</string>
+    <string name="take_an_exam">Take an Exam</string>
+    <string name="button">Button</string>
+    <string name="exit">exit</string>
 </resources>
