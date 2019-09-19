@@ -13,14 +13,15 @@ class MainActivity : AppCompatActivity() {
          */
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val intent = Intent(this, SetViewActivity::class.java)
         showBt.setOnClickListener{
-            startActivity(Intent(this, SetViewActivity::class.java))
+            startActivity(intent.putExtra("ActVal",1))
         }
         testBT.setOnClickListener {
-            startActivity(Intent(this, SetViewActivity::class.java))
+            startActivity(intent.putExtra("ActVal",2))
         }
         shareBT.setOnClickListener {
-            startActivity(Intent(this, SetViewActivity::class.java))
+            startActivity(intent.putExtra("ActVal",3))
         }
         exitBt.setOnClickListener {
             finish()

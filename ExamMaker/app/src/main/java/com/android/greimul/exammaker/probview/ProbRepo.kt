@@ -1,4 +1,4 @@
-package com.android.greimul.exammaker
+package com.android.greimul.exammaker.probview
 
 import androidx.annotation.WorkerThread
 import androidx.lifecycle.LiveData

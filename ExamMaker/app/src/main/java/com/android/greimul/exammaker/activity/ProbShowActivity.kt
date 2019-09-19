@@ -6,11 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.android.greimul.exammaker.ProbListAdapter
-import com.android.greimul.exammaker.ProbViewModel
+import com.android.greimul.exammaker.probview.ProbListAdapter
+import com.android.greimul.exammaker.probview.ProbViewModel
 import com.android.greimul.exammaker.R
 import kotlinx.android.synthetic.main.activity_showprob.*
-import kotlinx.android.synthetic.main.recyclerview_item.*
 
 class ProbShowActivity:AppCompatActivity(){
     /*companion object{

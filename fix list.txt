@@ -10,3 +10,8 @@ android.enableJetifier=true 추가
 발생시기: 안드로이드 스튜디오 업데이트 이후 발생 
 해결:
 gradle의 room버전, lifecycle 버전을 최신으로 바꿔서 해결
+3.
+문제:파일공유기능 팅김
+해결:
+안드로이드 7.0부터 보안때문에 팅긴것.
+FileProvider사용으로 해결

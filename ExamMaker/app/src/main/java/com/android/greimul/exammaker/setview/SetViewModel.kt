@@ -1,4 +1,4 @@
-package com.android.greimul.exammaker
+package com.android.greimul.exammaker.setview
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

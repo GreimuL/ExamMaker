@@ -5,8 +5,10 @@
               android:layout_height="wrap_content">
 
     <Button
+            android:id="@+id/showSetBt"
             style="@style/set_title"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/showSetBt"
-            android:text="@string/test"/>
+            android:layout_height="wrap_content"
+            android:text="@string/test"
+            android:textAllCaps="false" />
 </LinearLayout>
