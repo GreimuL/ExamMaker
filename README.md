@@ -9,5 +9,13 @@ Kotlin, Coroutine, MVVM, Room-Database  ,CSV Edit
   
 ## ScreenShots   
     
-Main                    SetList                   Share     
-<img src="./img/Main.jpg" width="30%" height="30%"><img src="./img/SetList.jpg" width="30%" height="30%"><img src="./img/Share.jpg" width="30%" height="30%">
+Main    
+<img src="./img/Main.jpg" width="30%" height="30%">   
+SetList   
+<img src="./img/SetList.jpg" width="30%" height="30%">   
+Share   
+<img src="./img/Share.jpg" width="30%" height="30%">   
+   
+##TODO   
+Complete ProblemList View
+Complete CSV Export
