@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp" android:layout_weight="1.5">
-        <Button
-                android:text="@string/New"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/newBt" style="@style/Widget.AppCompat.Button"/>
-        <Button
-                android:text="@string/load"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/loadBt" style="@style/Widget.AppCompat.Button"/>
-    </LinearLayout>
     <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp" android:id="@+id/textView2" android:layout_weight="0.7"
@@ -115,6 +103,7 @@
                 android:id="@+id/c4Edit"
                 android:hint="@string/choice_4"/>
     </LinearLayout>
+
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -131,6 +120,54 @@
                 android:id="@+id/c5Edit"
                 android:hint="@string/choice5"/>
     </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+        <CheckBox
+                android:id="@+id/c1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/choice_1"
+                android:textSize="12sp" />
+
+        <CheckBox
+                android:id="@+id/c2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/choice_2"
+                android:textSize="12sp" />
+
+        <CheckBox
+                android:id="@+id/c3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/choice_3"
+                android:textSize="12sp" />
+
+        <CheckBox
+                android:id="@+id/c4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/choice_4"
+                android:textSize="12sp" />
+
+        <CheckBox
+                android:id="@+id/c5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/choice5"
+                android:textSize="12sp" />
+    </LinearLayout>
+
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -150,13 +187,12 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="0dp" android:layout_weight="1.5">
+
         <Button
-                android:text="@string/add_problem"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" android:id="@+id/addBt" style="@style/Widget.AppCompat.Button"/>
-        <Button
-                android:text="@string/save_file"
+                android:id="@+id/addBt"
+                style="@style/Widget.AppCompat.Button"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" android:id="@+id/saveBt" style="@style/Widget.AppCompat.Button"/>
+                android:layout_height="match_parent"
+                android:text="@string/add_problem" />
     </LinearLayout>
 </LinearLayout>

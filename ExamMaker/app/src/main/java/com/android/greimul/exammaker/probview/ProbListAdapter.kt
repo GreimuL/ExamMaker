@@ -14,20 +14,26 @@ class ProbListAdapter internal constructor(context: Context): RecyclerView.Adapt
     private val inflater:LayoutInflater = LayoutInflater.from(context)
     private var probs = emptyList<Problems>()
 
+    interface SetClick{
+        fun onClick(view:View,pos:Int,problem:Problems)
+    }
+    var setClick:SetClick? =null
     inner class ProbViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
-        val probItemView: TextView = itemView.itemTextView
-        val probIdView:TextView = itemView.idView
+        val probViewBt: TextView = itemView.probViewBt
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProbViewHolder {
         val itemView = inflater.inflate(R.layout.recyclerview_item, parent, false)
         return ProbViewHolder(itemView)
     }
-
     override fun onBindViewHolder(holder: ProbViewHolder, position: Int) {
         val current = probs[position]
-        holder.probItemView.text = current.title
-        holder.probIdView.text = current.id.toString()
+        holder.probViewBt.text = current.title
+        if(setClick!=null){
+            holder.probViewBt.setOnClickListener{
+                setClick?.onClick(it,position,current)
+            }
+        }
     }
     internal fun setProbs(probs:List<Problems>){
         this.probs = probs

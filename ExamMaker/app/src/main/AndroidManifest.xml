@@ -36,7 +36,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity"/>
         </activity>
-
+        <activity android:name=".activity.ProbActivity"
+            android:parentActivityName=".activity.ProbShowActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.ProbShowActivity"/>
+        </activity>
         <provider
                 android:authorities="com.android.greimul.exammaker"
                 android:name="androidx.core.content.FileProvider"

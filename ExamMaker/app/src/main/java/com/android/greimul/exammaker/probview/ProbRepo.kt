@@ -11,4 +11,8 @@ class ProbRepo(private val probDAO: ProbDAO){
     suspend fun insert(prob:Problems){
         probDAO.insert(prob)
     }
+    @WorkerThread
+    suspend fun deleteAll(){
+        probDAO.deleteAll()
+    }
 }

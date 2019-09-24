@@ -9,22 +9,30 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.FileProvider
 import androidx.core.content.FileProvider.getUriForFile
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.greimul.exammaker.*
+import com.android.greimul.exammaker.db.ProbDAO
 import com.android.greimul.exammaker.fileio.exportSet
+import com.android.greimul.exammaker.fileio.importSet
 import com.android.greimul.exammaker.fileio.readSetFromDir
+import com.android.greimul.exammaker.probview.ProbViewModel
 import com.android.greimul.exammaker.setview.SetListAdapter
 import com.android.greimul.exammaker.setview.SetViewModel
-import kotlinx.android.synthetic.main.activity_addset.view.*
 import kotlinx.android.synthetic.main.activity_showset.*
+import kotlinx.android.synthetic.main.dialog_addset.view.*
 import java.io.File
 
 class SetViewActivity:AppCompatActivity(){
     private lateinit var setViewModel: SetViewModel
+    var actVal:Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_showset)
-        var actVal = intent.getIntExtra("ActVal",0)
+        ViewModelProvider(this)[(ProbViewModel::class.java)].deleteAll()
+        actVal = intent.getIntExtra("ActVal",0)
         if(actVal==0) {
             Toast.makeText(this,"Activity Error",Toast.LENGTH_SHORT).show()
             finish()
@@ -36,7 +44,8 @@ class SetViewActivity:AppCompatActivity(){
         if(actVal==1){
             adapter.setClick = object: SetListAdapter.SetClick{
                 override fun onClick(view:View,pos:Int,file:File){
-
+                    ViewModelProvider(this@SetViewActivity)[ProbViewModel::class.java].deleteAll()
+                    startActivityForResult(Intent(this@SetViewActivity,ProbShowActivity::class.java).putExtra("File",file.toString()).putExtra("ActVal",1),0)
                 }
             }
         }
@@ -61,10 +70,10 @@ class SetViewActivity:AppCompatActivity(){
         }
         addSetBt.setOnClickListener{
             val dialog = AlertDialog.Builder(this)
-            val dialogView = layoutInflater.inflate(R.layout.activity_addset,null)
+            val dialogView = layoutInflater.inflate(R.layout.dialog_addset,null)
             dialog.setView(dialogView).setPositiveButton("MakeSet"){
                     dialog,i->
-                    exportSet(dialogView.setName.text.toString())
+                    exportSet(dialogView.setName.text.toString(),this,this)
                     setList = readSetFromDir()
                     adapter.setSets(ckList(setList))
                 }
@@ -81,4 +90,10 @@ class SetViewActivity:AppCompatActivity(){
         }
         return setList
     }
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(data!=null)
+            actVal = data.getIntExtra("ActVal", 0)
+    }
+
 }

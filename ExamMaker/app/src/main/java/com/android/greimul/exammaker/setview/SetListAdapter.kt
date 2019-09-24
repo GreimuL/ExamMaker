@@ -14,7 +14,7 @@ import java.nio.file.Path
 class SetListAdapter internal constructor(context:Context): RecyclerView.Adapter<SetListAdapter.SetViewHolder>(){
     private val inflater:LayoutInflater =LayoutInflater.from(context)
     private var sets = emptyList<File>()
-    inner class SetViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
+    inner class SetViewHolder(itemView: View):RecyclerView. ViewHolder(itemView){
         val setItemView: TextView = itemView.showSetBt
     }
 
@@ -29,7 +29,7 @@ class SetListAdapter internal constructor(context:Context): RecyclerView.Adapter
     }
     override fun onBindViewHolder(holder: SetViewHolder, position: Int) {
         val current = sets[position]
-        holder.setItemView.text = current.name
+        holder.setItemView.text = current.nameWithoutExtension
         if(setClick!=null) {
             holder.itemView.showSetBt.setOnClickListener {
                 setClick?.onClick(it, position, current)

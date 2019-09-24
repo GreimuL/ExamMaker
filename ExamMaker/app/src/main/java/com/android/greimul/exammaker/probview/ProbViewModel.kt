@@ -20,4 +20,7 @@ class ProbViewModel(application: Application):AndroidViewModel(application){
     fun insert(prob:Problems) = viewModelScope.launch(Dispatchers.IO){
         repo.insert(prob)
     }
+    fun deleteAll()=viewModelScope.launch(Dispatchers.IO){
+        repo.deleteAll()
+    }
 }

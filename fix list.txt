@@ -15,3 +15,15 @@ gradle의 room버전, lifecycle 버전을 최신으로 바꿔서 해결
 해결:
 안드로이드 7.0부터 보안때문에 팅긴것.
 FileProvider사용으로 해결
+4.
+문제:deprecated ViewmodelProviders
+해결: 
+ViewmodelProvider(Activity)[class::java] 로 변경
+5.
+문제:패런츠 액티비티로 extra 보내기
+해결:
+startActivityForResult 사용, onOptionsItemSelected 오버라이드
+6.
+문제: 파일 추출중 팅김
+해결: 
+다른 쓰레드에서 파일 쓰기중에 Writer.Close() 때문에 발생

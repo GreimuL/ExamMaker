@@ -5,32 +5,19 @@
               android:layout_height="match_parent">
 
     <TextView
+            android:id="@+id/titleEdit"
             android:layout_width="match_parent"
-            android:layout_height="0dp" android:id="@+id/title"
-            android:gravity="center" android:textSize="24sp" android:text="null" android:layout_weight="1"/>
-    <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-        <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" android:id="@+id/dummy" android:layout_weight="25"
-                android:text="text size"
-                android:gravity="right"/>
-        <Button
-                android:text="+"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" android:id="@+id/txtSizeUp" android:layout_weight="10"/>
-        <Button
-                android:text="-"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content" android:id="@+id/txtSizeDown" android:layout_weight="10"/>
-    </LinearLayout>
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
     <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/description"
-            android:scrollbars="vertical" android:layout_weight="5" android:text="null"/>
+            android:scrollbars="vertical" android:layout_weight="5" android:text="null"
+            android:autoSizeTextType="uniform"/>
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -56,4 +43,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp" android:id="@+id/choice5" android:layout_weight="1"/>
     </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:layout_gravity="right">
+
+        <Button
+                android:id="@+id/showAnsBt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ShowAnswer"
+                android:textAllCaps="false" />
+
+        <Button
+                android:id="@+id/showExBt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ShowExplanation"
+                android:textAllCaps="false" />
+    </LinearLayout>
+
 </LinearLayout>

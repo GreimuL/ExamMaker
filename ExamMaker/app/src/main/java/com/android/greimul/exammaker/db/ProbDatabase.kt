@@ -39,10 +39,6 @@ public abstract class ProbDatabase: RoomDatabase(){
         }
         suspend fun populateDatabase(probDAO:ProbDAO){
             probDAO.deleteAll()
-            var prob = Problems(1,"Hello")
-            probDAO.insert(prob)
-            prob = Problems(2,"Hi")
-            probDAO.insert(prob)
         }
     }
 
