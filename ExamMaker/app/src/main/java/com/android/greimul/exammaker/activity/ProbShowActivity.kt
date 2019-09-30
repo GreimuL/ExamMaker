@@ -15,7 +15,6 @@ import com.android.greimul.exammaker.probview.ProbListAdapter
 import com.android.greimul.exammaker.probview.ProbViewModel
 import com.android.greimul.exammaker.R
 import com.android.greimul.exammaker.db.Problems
-import com.android.greimul.exammaker.fileio.CSVWrite
 import com.android.greimul.exammaker.fileio.importSet
 import kotlinx.android.synthetic.main.activity_showprob.*
 import java.io.File

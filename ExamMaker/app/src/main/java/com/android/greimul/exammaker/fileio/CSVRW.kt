@@ -2,12 +2,12 @@ package com.android.greimul.exammaker.fileio
 
 import android.content.Context
 import android.widget.Toast
-import androidx.lifecycle.LifecycleOwner
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelStoreOwner
+import androidx.lifecycle.*
 import com.android.greimul.exammaker.db.Problems
 import com.android.greimul.exammaker.probview.ProbViewModel
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import java.io.BufferedReader
 import java.io.File
 import java.io.FileReader
@@ -15,26 +15,43 @@ import java.io.FileWriter
 import java.lang.Exception
 
 val header = arrayOf("id","title","description","choice1","choice2","choice3","choice4","choice5","answer","explanation")
-fun CSVWrite(file:File,context:ViewModelStoreOwner,context2:LifecycleOwner){
+fun CSVWrite(file:File,viewModelProvider:ProbViewModel,context2:LifecycleOwner,debug:Int){
+    println(debug)
     file.createNewFile()
-    val csvWriter = FileWriter(file)
+    var csvStr:StringBuilder = StringBuilder("")
+    csvStr.clear()
     header.forEachIndexed{i,it->
-        csvWriter.append(it)
+        csvStr.append(it)
         if(i!=header.size-1)
-            csvWriter.append(",")
+            csvStr.append(",")
     }
-    ViewModelProvider(context)[ProbViewModel::class.java].allProb.observe(context2,
-        Observer {
-            it.forEachIndexed {i,prob->
-                csvWriter.append("\n")
-                csvWriter.append("${prob.id},${prob.title},${prob.description}" +
-                        ",${prob.choice1},${prob.choice2},${prob.choice3},${prob.choice4},${prob.choice5}" +
-                        ",${prob.answer},${prob.explanation}")
-                if(i==it.size-1){
-                    csvWriter.close()
+    var probList:List<Problems> = emptyList()
+    viewModelProvider.allProb.observe(context2,
+        Observer {/*
+            it.forEachIndexed { i, prob ->
+                csvStr.append("\n")
+                csvStr.append(
+                    "${prob.id},${prob.title},${prob.description}" +
+                            ",${prob.choice1},${prob.choice2},${prob.choice3},${prob.choice4},${prob.choice5}" +
+                            ",${prob.answer},${prob.explanation}"
+                )
+                if(i==it.size-1) {
+                    file.writeText(csvStr.toString())
+                    viewModelProvider.allProb.removeObservers(context2)
                 }
-            }
+            }*/
+            probList = it
         })
+    probList.forEachIndexed {i,prob->
+        csvStr.append("\n")
+        csvStr.append(
+            "${prob.id},${prob.title},${prob.description}" +
+                    ",${prob.choice1},${prob.choice2},${prob.choice3},${prob.choice4},${prob.choice5}" +
+                    ",${prob.answer},${prob.explanation}")
+        if(i==probList.size-1){
+            file.writeText(csvStr.toString())
+        }
+    }
 }
 fun CSVRead(file: File,context:Context):ArrayList<Problems>{
     val problemlist = ArrayList<Problems>()

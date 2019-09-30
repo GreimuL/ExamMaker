@@ -14,10 +14,22 @@
                 android:text="refresh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/refreshBt"/>
+
         <Button
-                android:text="ADD SET"
+                android:id="@+id/delSetBt"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/addSetBt" android:layout_weight="1"/>
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delete SET"
+                android:textAllCaps="false" />
+
+        <Button
+                android:id="@+id/addSetBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add SET"
+                android:textAllCaps="false" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

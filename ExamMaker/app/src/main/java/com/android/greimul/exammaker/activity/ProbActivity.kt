@@ -17,7 +17,7 @@ class ProbActivity: AppCompatActivity() {
         setContentView(R.layout.activity_prob)
         val problem = intent.getParcelableArrayListExtra<Problems>("Problem")[0]
         titleEdit.text = problem.title
-        description.text = problem.description
+        description.text = problem.description.replace(" ","\n")
         choice1.text = problem.choice1
         choice2.text = problem.choice2
         choice3.text = problem.choice3

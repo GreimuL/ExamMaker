@@ -27,3 +27,22 @@ startActivityForResult 사용, onOptionsItemSelected 오버라이드
 문제: 파일 추출중 팅김
 해결: 
 다른 쓰레드에서 파일 쓰기중에 Writer.Close() 때문에 발생
+7.
+문제: room insert 수행 끝나기전 파일 쓰기 수행
+해결:
+runBlocking{} 사용
+8.
+문제: 코루틴 실행 순서
+해결:
+job.join() 활용
+9.
+문제: viewmodel observe 시 두번 observe
+해결:
+removeObservers()
+10.
+문제: 구버전의 viewmodel을 가져옴
+해결:
+사용한  viewmodel을 그대로 넘겨줌
+11.
+문제: insert 전에 file write 수행
+해결: insert안에서 객체를 만드는 작업을 밖으로 빼줌
