@@ -18,10 +18,12 @@ Kotlin, Coroutine, MVVM, Room-Database  ,CSV Edit
 ### Problem   
 <img src="./img/ProblemList.jpg" width="20%" height="20%"><img src="./img/ProbShow.jpg" width="20%" height="20%"><img src="./img/AnsShow.jpg" width="20%" height="20%"><img src="./img/ExpShow.jpg" width="20%" height="20%">    
 
+### Test   
+<img src="./img/dotest1.jpg" width="20%" height="20%"><img src="./img/dotest2.jpg" width="20%" height="20%"><img src="./img/dotest3.jpg" width="20%" height="20%"><img src="./img/dotest4.jpg" width="20%" height="20%">   
+
 ### Share   
 <img src="./img/Share.jpg" width="20%" height="20%">   
    
 ## TODO   
-Fix Problem List   
-Make Test Function    
-Refactoring CSV IO
+Refactoring CSV IO   
+Fix Problem insert function

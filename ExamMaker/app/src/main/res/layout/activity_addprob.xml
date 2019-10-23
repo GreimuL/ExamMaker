@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:id="@+id/textView2" android:layout_weight="0.7"
+            android:text="@string/filename"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="@string/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/titleView"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/titleEdit" android:inputType="textPersonName"
+                android:hint="@string/title"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="3">
+        <TextView
+                android:text="@string/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/descriptionView"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/descriptEdit"
+                android:hint="@string/description" android:inputType="textMultiLine"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="@string/choice_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/c1View"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/c1Edit"
+                android:hint="@string/choice_1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="@string/choice_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/c2View"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/c2Edit"
+                android:hint="@string/choice_2"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="@string/choice_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/c3View"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/c3Edit"
+                android:hint="@string/choice_3"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="@string/choice_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/c4View"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/c4Edit"
+                android:hint="@string/choice_4"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="@string/choice5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/c5View"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/c5Edit"
+                android:hint="@string/choice5"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+        <CheckBox
+                android:id="@+id/c1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/choice_1"
+                android:textSize="12sp" />
+
+        <CheckBox
+                android:id="@+id/c2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/choice_2"
+                android:textSize="12sp" />
+
+        <CheckBox
+                android:id="@+id/c3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/choice_3"
+                android:textSize="12sp" />
+
+        <CheckBox
+                android:id="@+id/c4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/choice_4"
+                android:textSize="12sp" />
+
+        <CheckBox
+                android:id="@+id/c5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/choice5"
+                android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="2">
+        <TextView
+                android:text="@string/explanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/explainView"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/exEdit"
+                android:hint="@string/explanation" android:inputType="textMultiLine"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1.5">
+
+        <Button
+                android:id="@+id/addBt"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/add_problem" />
+    </LinearLayout>
+</LinearLayout>
