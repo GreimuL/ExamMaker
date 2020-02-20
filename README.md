@@ -1,5 +1,5 @@
 # ExamMaker  
-Kotlin, Coroutine, MVVM, Room-Database  ,CSV Edit
+Kotlin, Coroutine, Room-Database  ,CSV Edit
   
 ## Function  
 1. Make 'problem set'   
